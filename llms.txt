@@ -9,6 +9,7 @@ This is the AI-readable index for this site (llms.txt). It gives AI crawlers and
 ## Key pages
 
 - [Home](/ai-agent-business/): Landing page — positioning, mission, and links to every article.
+- [Free AI Automation Audit Checklist](/ai-agent-business/free-audit.html): Free, executable worksheet to scope your first automation — lead-in to paid [AI Agent services](/ai-agent-business/services.html).
 - [Article index (选题库)](/ai-agent-business/posts/00-选题库.md): Full topic backlog, 12 planned directions for the content site.
 
 ## Articles

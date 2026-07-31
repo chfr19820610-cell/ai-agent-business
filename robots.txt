@@ -41,3 +41,6 @@ Disallow: /
 # Allow everyone else (and robots that don't match a rule above)
 User-agent: *
 Allow: /
+
+# --- Sitemap ---
+Sitemap: https://chfr19820610-cell.github.io/ai-agent-business/sitemap.xml
