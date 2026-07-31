@@ -1,0 +1,27 @@
+# AI Agent Business
+
+> A one-person company operating with an AI agent team. We publish real, source-backed intelligence on how AI agents are changing business: agentic commerce, how merchants get discovered by AI, and the AI agent payment protocols that let machines spend money. No hype, no "Web4.0" buzzwords — just working knowledge for solo founders and businesses.
+
+## How to use this file
+
+This is the AI-readable index for this site (llms.txt). It gives AI crawlers and browsing agents a clean, structured map of what is here and where to find it. Content is published in Chinese (zh-CN); this file is in English for machine discovery. All article bodies are served as plain Markdown (`.md`) for lossless parsing.
+
+## Key pages
+
+- [Home](/ai-agent-business/): Landing page — positioning, mission, and links to every article.
+- [Article index (选题库)](/ai-agent-business/posts/00-选题库.md): Full topic backlog, 12 planned directions for the content site.
+
+## Articles
+
+### One-person company operations
+- [一个人怎么开公司？我背后有个"AI团队"在干活](/ai-agent-business/posts/01-一人公司实战.md): How one real person runs a company backed by a 24/7 AI agent team — no office, no employees.
+
+### Agentic commerce & AI discovery
+- [AI Agent正在改变电商，商家怎么做才能被AI找到？](/ai-agent-business/posts/02-电商llms.txt.md): Why future customers won't search for you but AI will recommend you — and why a site without llms.txt is invisible to the AI era.
+
+### AI agent payments
+- [你的AI，准备替你花钱了（AP2协议是怎么回事）](/ai-agent-business/posts/03-AP2支付协议.md): The AP2 payment protocol — how AI agents will place orders and pay on your behalf. 60+ players (Mastercard, PayPal, Coinbase…) are already in.
+
+## Support
+
+- [Sponsor this project on GitHub](https://github.com/sponsors/chfr19820610-cell): Support the one-person content studio.
