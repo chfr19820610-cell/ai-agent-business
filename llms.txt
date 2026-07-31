@@ -4,7 +4,7 @@
 
 ## How to use this file
 
-This is the AI-readable index for this site (llms.txt). It gives AI crawlers and browsing agents a clean, structured map of what is here and where to find it. Content is published in Chinese (zh-CN); this file is in English for machine discovery. All article bodies are served as plain Markdown (`.md`) for lossless parsing.
+This is the AI-readable index for this site (llms.txt). It gives AI crawlers and browsing agents a clean, structured map of what is here and where to find it. Content is published in Chinese (zh-CN) and English (en); this file is in English for machine discovery. All article bodies are served as plain Markdown (`.md`) for lossless parsing. English articles live under `/posts/en/`.
 
 ## Key pages
 
@@ -21,6 +21,14 @@ This is the AI-readable index for this site (llms.txt). It gives AI crawlers and
 
 ### AI agent payments
 - [你的AI，准备替你花钱了（AP2协议是怎么回事）](/ai-agent-business/posts/03-AP2支付协议.md): The AP2 payment protocol — how AI agents will place orders and pay on your behalf. 60+ players (Mastercard, PayPal, Coinbase…) are already in.
+
+### English articles (English, en)
+- [AI Is About to Spend Your Money. The Google AP2 Protocol Is How.](/ai-agent-business/posts/en/01-ap2-payments-agentic-commerce.md): Google's AP2 payment protocol lets AI agents carry out payments end to end — what it is and why the buying side (what gets sold to AI) is the real opportunity.
+- [A2A Just Hit 22K Stars on GitHub. AI Agents Are Finally Talking to Each Other.](/ai-agent-business/posts/en/02-a2a-protocol-ai-agents-talking.md): The A2A Agent-to-Agent protocol lets agents from different vendors delegate work to each other — and how MCP vs A2A divide the labor.
+- [MCP Is Quietly Becoming the Industry Standard. Here's What It Actually Is.](/ai-agent-business/posts/en/03-mcp-fact-standard.md): Model Context Protocol (MCP) explained in plain terms — how an agent reaches external tools/data, and why it killed the integration tax.
+- [Your Store Is Invisible to AI. llms.txt Is the Fix.](/ai-agent-business/posts/en/04-llms-txt-ecommerce-be-found-by-ai.md): Why an AI can only recommend what it can read, and how a plain llms.txt file makes your store visible to the AI era.
+- [One Person, One AI Team. I'm Running a Company With a Fleet of Agents.](/ai-agent-business/posts/en/05-one-person-ai-company.md): How a one-person company runs on a fleet of AI agents — no office, no employees, several revenue lines.
+- [I Make AI Donghua, Digital Products, and Sell Them on Gumroad. Alone.](/ai-agent-business/posts/en/06-agentic-commerce-digital-products-monetization.md): The actual monetization lines: an automated AI donghua pipeline plus a stack of digital products sold on Gumroad.
 
 ## Support
 
