@@ -24,7 +24,7 @@ robots.txt      Fully open to AI crawlers
 posts/          Articles — Chinese (zh-CN) and English (en)
 ```
 
-Every article body is served as plain Markdown so AI crawlers can parse it losslessly. The site is designed to be *found* by AI, not hidden from it.
+Every article is rendered as HTML for humans; the raw Markdown source sits alongside for AI crawlers that want lossless parsing. The site is designed to be *found* by AI, not hidden from it.
 
 ## Content
 
@@ -38,12 +38,14 @@ Chinese articles (the originals) live in `posts/`. Full topic backlog: `posts/00
 
 ## Services
 
-If you'd rather have help than read — two offerings, both priced for a small business:
+If you'd rather have help than read — four fixed-price offerings, each with a direct Gumroad checkout:
 
-- **AI Agent Setup** ($199–$999) — scope and stand up your first working agent, with a real demo you can run.
-- **AI Automation Audit** ($99–$299) — score your automation maturity, find the highest-ROI fixes, get an actionable plan.
+- **AI Agent Setup** ($199) — scope and stand up your first working agent, with a real demo you can run.
+- **AI Automation Audit** ($99) — score your automation maturity, find the highest-ROI fixes, get an actionable plan.
+- **AI Business Data Pack** ($29) — the playbooks, prompts, and llms.txt kit I run this operation on, instant download.
+- **1-on-1 Agent Coaching** ($299) — one focused session on your real agent setup, with a fix-list you can execute.
 
-Details and booking: https://chfr19820610-cell.github.io/ai-agent-business/services.html
+Details and direct checkout: https://chfr19820610-cell.github.io/ai-agent-business/services.html (English) · services-cn.html (中文版)
 
 ## Support
 
