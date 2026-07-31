@@ -1,21 +1,19 @@
-# A2A Just Hit 22K Stars on GitHub. AI Agents Are Finally Talking to Each Other.
+# A2A Is the Protocol for AI Agents Talking to Each Other
 
+Two years ago this sentence would've been nonsense: your AI agents now have a standard way to talk to each other, and it's an open source project on GitHub.
 
-Here's a sentence that would've sounded insane two years ago: your AI agents now have a standard way to talk to each other, and the spec hit 22,000 stars on GitHub.
+The project is A2A, short for Agent-to-Agent. Google released it on April 9, 2025, with more than 50 founding partners, among them Atlassian, Box, Cohere, Intuit, MongoDB, PayPal, Salesforce, SAP, and ServiceNow (Google Developers Blog). It now sits under the Linux Foundation, and the code lives in the a2aproject/A2A repository.
 
-The thing is called A2A — Agent-to-Agent — and more than 150 organizations have gotten behind it. What it does is simple to describe and annoying to build: it lets one agent hand a task to another agent, from a different vendor, and get the result back. Not a fake integration bolted on by the same company. Different systems, different models, actually interoperable.
+What it does is simple to describe and hard to build. It lets one agent hand a task to another agent from a different vendor and get the result back. Different vendors, different models, still interoperable.
 
-Up until now "AI agent" meant a chat window that could maybe call a couple of tools. You asked, it answered. A2A moves the game to: agent A discovers agent B, they negotiate what gets done, agent A delegates, agent B does the work and hands it back. The closest mental model is workers on a project, except nobody's in the office and one of them is running on a completely different stack.
+Before A2A, "AI agent" usually meant a chat window that could call a couple of tools. You asked, it answered. A2A changes the game: agent A discovers agent B, they agree on what gets done, agent A delegates, agent B does the work and hands it back. The closest mental model is a small team, except nobody is in the same office and one of them runs on a completely different stack.
 
-Let me separate two terms that people keep smashing together, because it matters:
+Two terms keep getting mashed together, and the difference matters:
+- MCP is how an agent reaches out and touches the outside world, the tools, data, and services outside the model. The agent grabbing a wrench.
+- A2A is how two agents coordinate with each other. The agent handing the wrench to the next person.
 
-- MCP is how an agent reaches out and touches the outside world — tools, data, services. It's the agent grabbing a wrench.
-- A2A is how two agents coordinate with each other. It's the agent handing the wrench to the next guy.
+You need both, and they do different jobs. MCP came first and became the standard for tool access. A2A sits on top and turns a single tool-calling bot into a working team.
 
-You need both, and they do different jobs. MCP got here first and became the de facto standard. A2A is the layer on top that turns a single tool-calling bot into an actual team.
+For a developer, the practical takeaway is that agent interoperability is becoming a protocol, the way SMTP became the standard for email instead of a feature one company controlled. Once that happens, the integration cost drops and the ecosystem opens up, and anyone still building a walled garden ends up working against the standard instead of with it.
 
-If you're a developer, the practical takeaway is that "agentic" is no longer a feature one company controls. It's becoming a protocol, like HTTP or email. Once something is a protocol, the integration cost drops, the ecosystem opens up, and the pace picks up in a way that surprises everyone who was building a walled garden.
-
-I've been digging into how to actually wire A2A into real projects rather than just reading the spec. I put together a starter walkthrough — MCP and A2A together, with templates — and it's on my Gumroad if you want to skip the trial and error. Or follow along; I'm breaking it down piece by piece on my site.
-
-#A2A #AIAgents #MCP #AgentProtocol #DeveloperTools
+#A2A #AIAgents #MCP #AgentProtocol

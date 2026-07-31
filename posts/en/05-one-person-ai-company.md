@@ -1,16 +1,21 @@
-# One Person, One AI Team. I'm Running a Company With a Fleet of Agents.
+# One Person, an AI Team: The Actual Setup, Not the Story.
 
+I run a one-person operation where the "team" is me plus a few agents. I keep getting asked how it actually works, so I'll keep this to the structure, no flexing.
 
-Let me be straight with you about what my "company" actually looks like. There's me. And then there are a lot of AI agents doing work that used to require a payroll.
+The part that made it click: agents stopped being toys and became cheap labor. I looked at what I was paying for content, design, and project tracking, and compared it to what it cost to run the same work through agents on API tokens. That comparison, not any hype, is what sold me.
 
-No office, no employees, nobody to manage. Just me and a fleet of agents that handles content, design, business, the lot. And here's the part that still trips me up when I say it out loud: it runs. It's not a demo and it's not a stunt. It's my actual operating model now.
+Here's the division I actually run, and it's small enough to copy:
 
-To give you a sense of scale, the thing I've built around myself carries hundreds of skills — north of four hundred, to be specific — and more than 270 agents organized into a bunch of departments. That sounds like a flex but it's really just me being lazy in the smart direction. Instead of hiring writers and designers and a project manager, I bought the hours an AI would've spent idle and pointed it at real output. Content gets made. Design gets made. The business side gets looked after. And it all happens without me sitting in a meeting about a meeting.
+- A writing agent that drafts posts and product copy from a shared outline. I edit, I don't rewrite.
+- A design agent that turns a brief into finished images and covers.
+- A publishing loop that takes approved drafts, formats them, and posts them. No one sits and clicks "publish" one at a time.
 
-What makes it work now, and not two years ago, is that the pieces finally talk to each other. MCP lets an agent reach out and actually touch tools and data. A2A lets one agent hand work to another agent instead of everything collapsing into one giant prompt. When those protocols landed, the "one-person company" went from motivational slogan to something you can actually run.
+The rule that keeps it from turning into a mess: one agent owns one job. If an agent has to decide what to do instead of doing its thing, it fails. Everything is scoped to a single deliverable.
 
-I've got multiple revenue lines running off this: an AI-generated donghua pipeline that produces episodes, digital products sold on Gumroad, a content site. All made by me and the agents, all pulling money in while I sleep. I'm not saying it's easy — setting it up took real work. But the unit economics are ridiculous compared to hiring people.
+The cost picture, honestly. For a mid-volume operation this runs on the order of tens of dollars a month in API credits per role, not the thousands of dollars a contractor or a hire costs. I'm not going to quote a fake "I earn X while sleeping" number, because that's not how it works and it isn't the point. The point is the fixed cost of producing output dropped enough that producing more no longer meant hiring more.
 
-People keep asking me how it's actually done, so I put my playbook — the setup, the agent roles, the content pipeline, how I monetize — up on Gumroad. If you're even a little serious about a one-person operation, it'll save you months of fumbling. Or just follow along on my site; I'm laying the whole thing out for free there too.
+Why this works now and not two years ago is boring and concrete: MCP lets an agent actually touch your tools and data, and A2A lets one agent hand finished work to the next instead of everything collapsing into one giant prompt. Both are open, documented standards (MCP, A2A), not vendor lock-in.
 
-#OnePersonCompany #AIAgents #Solopreneur #AIAutomation #DigitalProducts
+The part nobody warns you about: you spend your time on the inputs and the review, not the production. Your job stops being doing the work and becomes being clear about what done looks like. That's a skill on its own, and it's the one that decides whether the setup helps you or just makes bad output faster.
+
+#OnePersonCompany #AIAgents #Solopreneur #AIAutomation

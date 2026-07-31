@@ -1,23 +1,19 @@
-# MCP Is Quietly Becoming the Industry Standard. Here's What It Actually Is.
+# MCP Is Quietly Becoming the Standard for AI to Use Your Product
 
+Every AI product this year says it supports MCP. It's on the landing pages, in the release notes. Ask most people what it actually does and you get a shrug.
 
-Every AI product you've seen this year says it "supports MCP." It's on every landing page, every release note. But ask most people what MCP actually does and you get a shrug.
+MCP, the Model Context Protocol, is how an AI agent reaches a tool, a database, or a service that lives outside the model. Anthropic introduced it in November 2024 (Anthropic announcement), and within months OpenAI, Google, and Microsoft all said they'd support it. That's the part worth pausing on: the big model companies, who normally compete, agreeing on one integration layer.
 
-Let's kill the confusion in one sentence: MCP — Model Context Protocol — is how an AI agent grabs a tool, a database, or a service that lives outside the model and uses it. Your chat app doesn't just answer; it reaches out and pulls something real.
+Before MCP, connecting a model to a tool meant a custom job every time. You wanted the model to check a calendar, so you wrote an integration for that specific calendar. Then the next tool needed its own. Every company rebuilt the same plumbing.
 
-Before MCP, connecting an LLM to a tool was a custom job every time. You wanted the model to check a calendar? You wrote a bespoke integration for that specific calendar. Then the next tool needed its own integration. And the next. Every company rebuilt the same plumbing.
+MCP changes the shape of the problem. The model gets one standard way to find and call external tools, and a tool provider gets one standard way to expose itself. Write it once and any MCP-aware agent can use it. That's why it spread the way it did. It killed the integration tax.
 
-MCP changes the shape of the problem. It gives the model one standard way to find and call external tools, and it gives tool providers one standard way to expose themselves. Write it once, and any MCP-aware agent can use it. That's why it took off — it killed the integration tax. Anthropic shipped the idea, the ecosystem ran with it, and now it's the de facto standard nobody voted on but everybody adopted.
+If you run a SaaS, an API, or a store, the practical question is whether an agent can reach you the MCP way. The mechanics, stripped down:
 
-To be precise about the division of labor, because it trips people up:
+A host, like a chat app or an agent framework, connects to an MCP server. The server exposes a set of tools, each with a name, a description, and a JSON schema for its inputs. The model reads those descriptions and decides when to call a tool. You don't hard-code the calling; you describe what the tool does and the model figures out the rest.
 
-- MCP connects the agent to the world. Tools, data, services, your API.
-- A2A connects the agent to other agents. One bot delegating to another bot.
+Concrete example. To expose a product catalog, build a small MCP server that offers one tool, search_products, with a query string parameter. Point any MCP-aware agent at it and the agent can search your catalog without a bespoke integration on either side. The server can be a few hundred lines in whatever language you already use.
 
-MCP is the "hands," A2A is the "teamwork." Different layers, both matter, and if you're building anything in the agent space you're going to run into MCP first.
-
-Why should you care if you're not a pure engineer? Because MCP is the thing that makes "the AI can use my product" actually true. For a SaaS, for an API, for a store — if your service is exposed the MCP way, an agent can reach it without a custom deal. If it's not, you're asking every agent builder to build special support for you. Most of them won't bother.
-
-I wrote up a from-zero MCP setup — what it is, how to wire it, with templates you can steal — over on my Gumroad. It's cheap, it's concrete, and it saves you the afternoon of reading scattered docs. Or poke around my site; I'm doing the full walkthrough there.
+The barrier is lower than people assume. Anthropic and others ship reference servers and SDKs, and the spec is public and documented (link). If your service can be described as a set of actions with inputs and outputs, it can probably be an MCP server.
 
 #MCP #AIAgents #ModelContextProtocol #API #LLM

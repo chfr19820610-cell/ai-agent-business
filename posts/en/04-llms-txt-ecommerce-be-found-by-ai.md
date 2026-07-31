@@ -1,18 +1,39 @@
-# Your Store Is Invisible to AI. llms.txt Is the Fix.
+# Your Store Is Invisible to AI. llms.txt Fixes That in Under an Hour.
 
+Ask your AI to "recommend a store for X" and see if your business shows up. For most online stores, it doesn't, because most sites are a wall to a model.
 
-Here's the uncomfortable question for anyone selling online right now: when someone asks their AI "recommend a store for X," does your business even exist to that AI?
+A browser renders JavaScript, images, and scripts into something a human can read. A model wants clean, structured text it can index. If an AI can't parse your pages, it can't recommend you, and that matters more than it did a year ago. Shopping is starting to move from "browse and pick" to "ask an agent, let it compare and buy." You spent a decade optimizing for Google. There's a new reader now and it reads differently.
 
-Because that's where shopping is going. Morgan Stanley and a combined ICSC + McKinsey study both put agentic commerce somewhere between $385B and $1T by 2030. People won't just browse — an agent will compare, shortlist, and buy on their behalf. And here's the uncomfortable part nobody tells you: that agent can only recommend what it can actually read.
+The fix is a single plain-text file. llms.txt is a proposal from Jeremy Howard, published in 2024 (original post), for a markdown file placed at the root of your site, like /llms.txt. It tells an AI what you sell, which pages matter, and how to understand your content. Think of it as a sitemap written for a language model instead of a crawler.
 
-Most websites are a wall to an AI. Your store is probably built on JavaScript, images, and scripts — great for a human with a browser, useless to a model that wants clean, structured text it can index. If an AI can't parse your pages, it can't recommend you. You've optimized for Google for a decade. There's a whole new gatekeeper now, and it reads differently.
+Setting it up genuinely takes under an hour. Here's what a real one looks like, for a fictional store:
 
-The fix is smaller than you'd think. A little spec called **llms.txt** — a plain text file in your site's root that tells an AI what you sell, what pages matter, and how to understand your content. Think of it as a sitemap for AI instead of for crawlers. Takes an hour to set up, and it's the difference between being readable and being invisible.
+```
+# Example Store
 
-It's early, which is the whole point. Almost no merchants have done this yet. That's not a reason to wait — that's a reason to move. Being one of the first stores an agent can read means being the store an agent picks before the field fills up.
+> Example Store sells handmade leather bags and accessories,
+> made to order in Portland, Oregon.
 
-And it's not only llms.txt. The MCP side matters too — exposing your catalog the way agents expect to reach it. The more an AI can do on your store end to end, the more of that $385B–$1T you're positioned to touch.
+## About
+We are a small workshop making leather goods since 2012.
+Ship worldwide, 30-day returns.
 
-I put together a practical setup guide — exactly what to put in llms.txt, where it goes, a copy-paste template for an online store — and it's up on my Gumroad for a couple of bucks. If you'd rather start free, the intro walkthrough is on my site. Either way, do this before your competitors do.
+## Products
+- [All products](/products)
+- [Leather bags](/products/bags)
+- [Wallets](/products/wallets)
+- [Shoes](/products/shoes)
 
-#llms.txt #AIAgents #Ecommerce #AgenticCommerce #SEOFuture
+## Contact
+- [Shipping policy](/shipping)
+- [Returns](/returns)
+- [Contact](/contact)
+```
+
+Three fields do most of the work: a title line, a short description with the ">" prefix, and a list of links to your key pages. Keep each link's anchor text descriptive ("Leather bags," not "click here"), because that's what the model uses to decide what's on the page. Drop the file at your domain root, then check that `curl https://yourstore.com/llms.txt` returns it as plain text. That's the whole setup.
+
+It's early, which is the point. Very few merchants have done this yet, so a readable store is the exception rather than the norm. That's a small thing in your favor, but it's not a race you need to win this week. Do it once, correctly, and it stays done.
+
+The template above works as-is. If you want the longer version with the extra sections people add, I keep one up on my site, free.
+
+#llms.txt #AIAgents #Ecommerce #AgenticCommerce

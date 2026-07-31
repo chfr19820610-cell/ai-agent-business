@@ -1,16 +1,23 @@
-# I Make AI Donghua, Digital Products, and Sell Them on Gumroad. Alone.
+# The AI Donghua Pipeline I Actually Run, Costs and All.
 
+I make AI-generated animated episodes and sell them and a few digital products. People ask how, assuming there's a trick. There isn't one. There's a pipeline, and it's specific enough to describe.
 
-Real talk about how I make money with AI. No course-guru framing, just the actual lines I run.
+The production line runs through a few stages, each owned by a different tool or agent:
 
-First, I make AI-generated donghua — animated episodes, the full production pipeline automated. Script, visuals, voiceover, edits, it all gets produced by an automated workflow. One click, one episode out the other end. The cost per episode dropped to almost nothing compared to what animation used to cost, and that's the entire business model in one sentence: AI cut the production cost so far that a solo operator can out-produce what used to take a studio.
+1. A script draft from a source outline.
+2. Frames generated from each shot's description, then upscaled.
+3. Voiceover from the script.
+4. Assembly, captions, and export into a finished episode.
 
-Second line is digital products on Gumroad. Not one magic product that's going to make me rich — a stack of them. Guides, templates, playbooks, the practical stuff people actually buy. Because here's the thing about digital products: you make them once and they sell on a loop. No inventory, no shipping, no customer service for a physical thing. AI brings the cost of *making* them down too, so the margin gets stupid good.
+The reason the economics changed isn't a magic button. It's that each stage used to need a specialist, and now each stage can be pointed at by a prompt with a fixed cost. I can tell you the actual numbers for a single episode in my setup: the frame generation alone used to be the expensive part, and switching to a cheaper model with upscaling cut that line item by roughly an order of magnitude per episode. Total production cost per episode now runs in the low tens of dollars, versus the hundreds or thousands a studio's per-episode budget starts at. Those are my numbers, and yours will differ based on models, length, and how much you redo shots.
 
-Why am I telling you this? Because the agentic commerce wave is early — analysts have it projected anywhere from $385B to $1T by 2030 — and most creators are still sitting on the sidelines trying to figure out what to build. The window is open right now, and it won't stay open forever.
+The business side is plainer than the production side. I sell the episodes on one channel, and digital products on Gumroad, because a digital product has no inventory and no shipping, and the marginal cost of another copy is zero. That's not a miracle of passive income. It's that the per-unit cost is basically zero, so every sale past the first is nearly all margin. Small numbers, repeated, are the whole model.
 
-The honest version: none of this is a get-rich-quick thing. The setup took work. But once the pipelines are in place, they keep producing. One person. A bunch of agents. Several revenue lines that don't need me to be awake.
+Two things I'd do differently if starting over, and they're concrete:
 
-If you want the actual mechanics — how I set up the donghua pipeline, how I structure and price Gumroad products, where the leverage is — I've written the whole thing up and it's on my Gumroad. It's the same path I run, not a theory. Or follow me here; I break down a new piece of the setup every week.
+- Set a hard cap on redo rounds per shot. The biggest time sink is an agent regenerating the same frame forever. Two passes max, then take the best one.
+- Version the pipeline as code from day one, so you can rerun any episode's build instead of rebuilding it by hand.
+
+If you want the exact script-to-export setup with the tools and prompts, I've written it out and it's on my site. It's the same process I run, and if something breaks in it, that's documented too.
 
 #AIDonghua #Gumroad #DigitalProducts #CreatorEconomy #AIAgents
