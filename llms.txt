@@ -23,6 +23,10 @@ This is the AI-readable index for this site (llms.txt). It gives AI crawlers and
 ### AI agent payments
 - [你的AI，准备替你花钱了（AP2协议是怎么回事）](/ai-agent-business/posts/03-AP2支付协议.html): The AP2 payment protocol — how AI agents will place orders and pay on your behalf. 60+ players (Mastercard, PayPal, Coinbase…) are already in.
 
+### Creative production / AI anime (中文, zh-CN)
+- [一个人怎么把 AI 漫剧做成可量产、可赚钱的管线？](/ai-agent-business/posts/04-AI漫剧制作管线.html): The actual six-stage AI manhua/anime production pipeline a one-person AI studio runs — script to finished episode, real per-episode costs (low tens of dollars), tool choices, and a monetization loop from flagship handbook to white-label service. Service lead-in: [30s white-label sample](/ai-agent-business/white-label-video.html) and [AI Agent services](/ai-agent-business/services-cn.html). Chinese counterpart of the English flagship EN09.
+
+
 ### English articles (English, en)
 - [AI Is About to Spend Your Money. The Google AP2 Protocol Is How.](/ai-agent-business/posts/en/01-ap2-payments-agentic-commerce.html): Google's AP2 payment protocol lets AI agents carry out payments end to end — what it is and why the buying side (what gets sold to AI) is the real opportunity.
 - [A2A Just Hit 22K Stars on GitHub. AI Agents Are Finally Talking to Each Other.](/ai-agent-business/posts/en/02-a2a-protocol-ai-agents-talking.html): The A2A Agent-to-Agent protocol lets agents from different vendors delegate work to each other — and how MCP vs A2A divide the labor.

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一个人怎么把 AI 漫剧做成可量产、可赚钱的管线</title>
+<meta name="description" content="一条 AI 一人工作室实际跑通的 AI 漫剧管线：真实工具、真实单集成本（低至几十美元）、以及从旗舰手册到白标服务的变现闭环。具体到可以直接照抄。">
+<link rel="canonical" href="https://chfr19820610-cell.github.io/ai-agent-business/posts/04-AI漫剧制作管线.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Agent Business">
+<meta property="og:title" content="一个人怎么把 AI 漫剧做成可量产、可赚钱的管线">
+<meta property="og:url" content="https://chfr19820610-cell.github.io/ai-agent-business/posts/04-AI漫剧制作管线.html">
+<meta name="twitter:card" content="summary">
+<style>:root{--bg:#0E1116;--ink:#E8E6E1;--dim:#9AA3AD;--line:#232A34;--accent:#5ED4B8;--accent2:#E8B64C;--card:#151A22;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+.topnav{display:flex;flex-wrap:wrap;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:13px}
+.topnav a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.topnav a:hover{color:var(--bg);background:var(--accent)}
+header{padding:48px 0 28px}
+.eyebrow{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(26px,4.6vw,38px);font-weight:700;margin:14px 0 12px;letter-spacing:-.01em;line-height:1.25}
+.sub{color:var(--dim);font-size:15px;max-width:60ch}
+article{padding:12px 0 32px;border-bottom:1px solid var(--line)}
+article h2{font-size:22px;margin:28px 0 10px;line-height:1.35}
+article h3{font-size:17px;margin:22px 0 8px;color:var(--accent2)}
+article p{margin:14px 0;color:var(--ink)}
+article ul,article ol{margin:14px 0 14px 22px}
+article li{margin:7px 0;padding-left:4px}
+article li::marker{color:var(--accent)}
+article a{color:var(--accent);word-break:break-word}
+article strong{color:var(--ink)}
+article code{font-family:var(--mono);font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--accent2)}
+article pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:16px 0;overflow-x:auto;font-family:var(--mono);font-size:13px;color:var(--ink);line-height:1.6}
+article pre code{background:none;border:none;padding:0;color:inherit}
+article blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 16px;margin:16px 0;color:var(--dim);font-size:15px}
+article blockquote strong{color:var(--dim)}
+article hr{border:none;border-top:1px solid var(--line);margin:26px 0}
+article table{border-collapse:collapse;margin:18px 0;width:100%;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600;color:var(--accent)}
+.article-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px 0;border-bottom:1px solid var(--line);font-size:14px}
+.cta{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;margin:32px 0;text-align:center}
+.cta-title{font-size:19px;font-weight:700;margin-bottom:10px}
+.cta p{color:var(--dim);font-size:15px;max-width:52ch;margin:0 auto 18px}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:10px;margin-right:10px}
+.btn:hover{opacity:.9}
+.alt{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+.back{display:inline-block;margin:26px 0;color:var(--accent);text-decoration:none;font-family:var(--mono);font-size:13px}
+footer{padding:0 0 40px;color:var(--dim);font-size:13px}
+footer .mono{font-family:var(--mono)}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="../index.html">内容站</a>
+    <a href="../services-cn.html">服务</a>
+    <a href="../free-audit.html">免费体检</a>
+  </nav>
+  <header>
+    <div class="eyebrow">一人 AI 工作室实战管线 · 中文旗舰篇</div>
+    <h1>一个人怎么把 AI 漫剧做成可量产、可赚钱的管线？</h1>
+    <div class="sub">真实工具 + 真实单集成本 + 变现闭环。没有魔法按钮，具体到可以直接照抄。</div>
+  </header>
+  <article>
+<p>你刷到的 AI 漫剧短片到处都是。但多数帖子只告诉你一个模型名字就停了——"用这个就行"。那不是工作流。下面这篇讲的是一个 AI 一人工作室<strong>实际跑通的</strong>从脚本到成片、再到变现的完整管线：真实工具、真实单集成本、怎么靠它回本。</p>
+
+<h2>AI 漫剧管线的六个阶段</h2>
+<p>一集成片不是"一次生成"，而是一条流水线——每一阶段由不同的工具或 Agent 负责，每一阶段都有固定、可知的成本。只要一个阶段能被提示词驱动，它就不再是"专家专属"，而是一个成本项。</p>
+<ol>
+<li><strong>剧本。</strong> 源大纲（小说/系列设定/分集剧本）拆成逐镜头的分镜脚本。这是最便宜、也最常被跳过的一步——而整集质量恰恰在这决定。</li>
+<li><strong>画面帧。</strong> 每个镜头的描述渲染成静帧，再超分到交付分辨率。以前这是最贵的一步，现在依然是最可控的一步。</li>
+<li><strong>配音。</strong> 脚本变成旁白或对白。逐句 TTS，固定每分钟成本。</li>
+<li><strong>合成。</strong> 帧剪辑成镜头、加动态、导出成片。</li>
+<li><strong>字幕。</strong> 为发布平台烧录硬字幕。</li>
+<li><strong>导出。</strong> 目标分辨率与画幅比的成片。</li>
+</ol>
+<p>整套流程以代码形式运行，所以任何一集都可以重跑。把管线版本化成代码不是锦上添花——它决定了你是"会做动画的人"还是"拥有一条工厂"。</p>
+
+<h2>真实成本：一集低至几十美元</h2>
+<p>关键数字是<strong>单集成本</strong>，而且它在最贵的那一步变便宜后大幅塌缩。在我们的实际配置里，把帧生成切到更便宜的模型、加上超分，这一项单集成本就降了约一个数量级。现在每集总制作成本落在<strong>低几十美元</strong>区间——对比工作室动辄几百上千美元的起价。</p>
+<table>
+<tr><th>阶段</th><th>典型成本占比</th><th>说明</th></tr>
+<tr><td>剧本</td><td>低</td><td>由提示词 + 大纲长度决定</td></tr>
+<tr><td>帧 + 超分</td><td>最高</td><td>是降本幅度最大的杠杆</td></tr>
+<tr><td>配音</td><td>低</td><td>按分钟固定</td></tr>
+<tr><td>合成 + 字幕</td><td>低</td><td>便宜，但不写成代码就吞时间</td></tr>
+</table>
+<p>以上是我们的数字。你的会因模型选择、集数时长、重绘次数而异。真正可迁移的是<strong>结构</strong>：每一阶段都有成本，而最便宜、最稳的赢法，是那些可以自动重跑的部分。</p>
+
+<h2>从"能做"到"能赚钱"</h2>
+<p>管线跑通只是第一步。变现的完整闭环是：<strong>旗舰数字品（制作手册）→ 免费钩子（30 秒样片 / 审计清单）→ 可交付的服务（白标定制）→ 带归因的发布渠道</strong>。</p>
+<ul>
+<li>想系统学这套管线、含可复制提示词与成本表：看我们的 <a href="https://aicg.gumroad.com/l/aicg-handbook" rel="nofollow"><strong>《AICG 动画制作手册》</strong></a>（US$14.99）。</li>
+<li>想先看效果再决定：拿一个 <a href="../white-label-video.html"><strong>30 秒免费白标样片</strong></a>，用你自己的故事/形象试跑。</li>
+<li>需要量产或定制：走 <a href="../services-cn.html"><strong>白标 AI 动画服务</strong></a>（按集报价）。</li>
+</ul>
+<blockquote>一句话：先有付费客户再交付，不是先堆能力再找用户。管线的价值在于它让"按集报价、可复跑、可降本"成为可能——这才是它能变成生意的原因。</blockquote>
+<hr>
+<p><em>本文为一人 AI 工作室实战管线中文旗舰篇，配套英文版 <a href="./09-ai-anime-production-workflow.html">《How to Make an AI Anime Short Film》</a>。</em></p>
+  </article>
+
+  <div class="cta">
+    <div class="cta-title">想要一条你自己能跑、能赚钱的 AI 漫剧管线？</div>
+    <p>先拿免费 30 秒样片验证效果，再决定要不要量产或定制。旗舰制作手册直接教你照做。</p>
+    <a class="btn" href="../white-label-video.html">拿免费样片 →</a>
+    <a class="alt" href="../services-cn.html">看服务清单</a>
+  </div>
+
+  <div class="article-nav">
+    <div class="prev"><a href="./03-AP2支付协议.html">← AP2 支付协议</a></div>
+    <div class="next"><a href="./09-ai-anime-production-workflow.html">英文版 →</a></div>
+  </div>
+
+  <a class="back" href="../index.html">← 返回内容站首页</a>
+  <footer>
+    <div class="mono">© 2026 · chfr19820610-cell</div>
+    <div>内容站免费，服务按件计价。先看 <a href="../index.html">内容站</a>，信得过再下单。</div>
+  </footer>
+</div>
+</body>
+</html>
