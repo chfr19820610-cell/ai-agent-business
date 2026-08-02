@@ -31,6 +31,9 @@ This is the AI-readable index for this site (llms.txt). It gives AI crawlers and
 - [One Person, One AI Team. I'm Running a Company With a Fleet of Agents.](/ai-agent-business/posts/en/05-one-person-ai-company.html): How a one-person company runs on a fleet of AI agents — no office, no employees, several revenue lines.
 - [I Make AI Donghua, Digital Products, and Sell Them on Gumroad. Alone.](/ai-agent-business/posts/en/06-agentic-commerce-digital-products-monetization.html): The actual monetization lines: an automated AI donghua pipeline plus a stack of digital products sold on Gumroad.
 
+### Creative production / AI anime (English, en)
+- [How to Make an AI Anime Short Film: A Real, Agent-Driven Pipeline](/ai-agent-business/posts/en/09-ai-anime-production-workflow.html): The actual six-stage AI anime production pipeline a one-person AI studio runs — script to finished episode, real per-episode costs (low tens of dollars), tool choices, and how to monetize episodes plus digital products. Service lead-in: [white-label 30s AI animation sample](/ai-agent-business/white-label-video.html) and [AI Agent services](/ai-agent-business/services.html).
+
 ### AI agent services (English, en)
 - [How to Set Up AI Agents for Your Small Business (Without Hiring a Team)](/ai-agent-business/posts/en/07-service-setup-agents.html): A concrete, no-hype guide to scoping and deploying your first AI agent — pick one task, write ten examples, prove it on tools you already pay for. Service lead-in: [AI Agent Setup](/ai-agent-business/services.html).
 - [AI Automation Audit: Where Your Business Is Wasting Time (and How to Fix It)](/ai-agent-business/posts/en/08-service-automation-audit.html): How to log, measure, and rank the automatable hours in your business before you automate anything. Service lead-in: [AI Automation Audit](/ai-agent-business/services.html).

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Make an AI Anime Short Film: A Real, Agent-Driven Pipeline (Costs, Tools, Monetization)</title>
+<meta name="description" content="The actual AI anime short-film production pipeline a one-person AI studio runs: 6 stages, real per-episode costs, tool choices, and how to monetize episodes plus digital products on Gumroad.">
+<link rel="canonical" href="https://chfr19820610-cell.github.io/ai-agent-business/posts/en/09-ai-anime-production-workflow.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Agent Business">
+<meta property="og:title" content="How to Make an AI Anime Short Film: A Real, Agent-Driven Pipeline">
+<meta property="og:description" content="6 stages, real costs (low tens of dollars per episode), and how to monetize AI anime plus digital products. Specific enough to copy.">
+<meta property="og:url" content="https://chfr19820610-cell.github.io/ai-agent-business/posts/en/09-ai-anime-production-workflow.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to Make an AI Anime Short Film: A Real, Agent-Driven Pipeline">
+<meta name="twitter:description" content="The actual AI anime production pipeline: 6 stages, real costs, tool choices, and monetization.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Make an AI Anime Short Film: A Real, Agent-Driven Pipeline (Costs, Tools, Monetization)","description":"The actual AI anime short-film production pipeline a one-person AI studio runs: 6 stages, real per-episode costs, tool choices, and monetization.","inLanguage":"en","mainEntityOfPage":"https://chfr19820610-cell.github.io/ai-agent-business/posts/en/09-ai-anime-production-workflow.html","author":{"@type":"Person","name":"chfr19820610-cell"},"publisher":{"@type":"Organization","name":"AI Agent Business"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need a powerful computer to make an AI anime short film?","acceptedAnswer":{"@type":"Answer","text":"No. Every stage runs on a prompt to a hosted model or service. You need a browser and a code editor, not a workstation."}},{"@type":"Question","name":"Is the quality good enough to publish?","acceptedAnswer":{"@type":"Answer","text":"Yes — AI anime shorts are already published and watched across platforms. The bar is telling a complete story in the format a platform rewards, not looking like a studio movie."}},{"@type":"Question","name":"How long does one episode take?","acceptedAnswer":{"@type":"Answer","text":"Once the pipeline is coded, a single episode's build is mostly unattended. The human time is writing the script and reviewing the frames you keep."}},{"@type":"Question","name":"What if I don't want to run the software myself?","acceptedAnswer":{"@type":"Answer","text":"You don't have to build it from scratch. A white-label service produces a branded 30-second sample first, then you decide."}}]}
+</script>
+<style>:root{--bg:#0E1116;--ink:#E8E6E1;--dim:#9AA3AD;--line:#232A34;--accent:#5ED4B8;--accent2:#E8B64C;--card:#151A22;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+.topnav{display:flex;flex-wrap:wrap;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:13px}
+.topnav a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.topnav a:hover{color:var(--bg);background:var(--accent)}
+header{padding:48px 0 28px}
+.eyebrow{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(26px,4.6vw,38px);font-weight:700;margin:14px 0 12px;letter-spacing:-.01em;line-height:1.25}
+.sub{color:var(--dim);font-size:15px;max-width:60ch}
+article{padding:12px 0 32px;border-bottom:1px solid var(--line)}
+article h2{font-size:22px;margin:28px 0 10px;line-height:1.35}
+article h3{font-size:17px;margin:22px 0 8px;color:var(--accent2)}
+article p{margin:14px 0;color:var(--ink)}
+article ul,article ol{margin:14px 0 14px 22px}
+article li{margin:7px 0;padding-left:4px}
+article li::marker{color:var(--accent)}
+article a{color:var(--accent);word-break:break-word}
+article strong{color:var(--ink)}
+article table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:8px 12px;text-align:left}
+article th{color:var(--accent2);font-family:var(--mono);font-weight:400}
+article td{color:var(--ink)}
+.faq{border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:16px 0}
+.faq h3{margin-top:0}
+.faq p{margin:8px 0;color:var(--ink)}
+.article-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px 0;border-bottom:1px solid var(--line);font-size:14px}
+.article-nav a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.article-nav .next{margin-left:auto;text-align:right}
+.cta{margin:30px 0;padding:26px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.cta .cta-title{font-size:17px;font-weight:700;margin-bottom:6px}
+.cta p{color:var(--dim);font-size:14px;margin-bottom:16px;max-width:56ch}
+.cta .btn{display:inline-block;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;padding:11px 22px;border-radius:8px;text-decoration:none;font-family:var(--mono)}
+.cta .btn:hover{background:var(--accent2)}
+.cta .alt{display:inline-block;margin-left:14px;color:var(--dim);font-size:13px;text-decoration:underline}
+.back{display:inline-block;margin-top:22px;color:var(--accent);font-family:var(--mono);font-size:13px;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+footer{padding:36px 0 56px;color:var(--dim);font-size:13px}
+.mono{font-family:var(--mono)}
+@media(max-width:480px){header{padding:32px 0 20px}.cta{padding:20px}}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="topnav">
+  <a href="../../index.html">← Back to content site</a>
+  <a href="../../services.html">Services</a>
+  <a href="../../llms.txt">llms.txt</a>
+</nav>
+
+<header>
+  <div class="eyebrow">EN 07 · AI Anime Production</div>
+  <h1>How to Make an AI Anime Short Film: A Real, Agent-Driven Pipeline (Costs, Tools, Monetization)</h1>
+  <p class="sub">Most posts tell you a tool name and stop. Here's the actual pipeline a one-person AI studio runs — six stages, real per-episode costs, and how it pays for itself. Specific enough to copy.</p>
+</header>
+
+<article>
+<p>You see AI anime shorts everywhere now. Most posts tell you a tool name and stop — &quot;just use this model.&quot; That's not a workflow. Here is the actual pipeline a one-person AI studio runs to turn a script outline into a finished, monetizable AI anime episode, with the real tools, the real costs, and how it pays for itself. No magic button. Specific enough to copy.</p>
+
+<h2>The six stages of an AI anime pipeline</h2>
+<p>A finished episode is not one generation. It's an assembly line where each stage is owned by a different tool or agent, and each stage has a fixed, knowable cost. If a stage can be pointed at by a prompt, it's no longer a specialist's job — it's a line item.</p>
+<ol><li><strong>Script.</strong> A source outline (novel, series bible, treatment) becomes a shot-by-shot script. This is the cheapest stage and the one most people skip — and it's where the whole episode's quality is decided.</li><li><strong>Frames.</strong> Each shot's description is rendered into still frames, then upscaled to deliverable resolution. This used to be the expensive stage; it still is the most controllable one.</li><li><strong>Voiceover.</strong> The script becomes narration or dialogue. Text-to-speech, run per line, with a fixed per-minute cost.</li><li><strong>Assembly.</strong> Frames are cut into shots, motion is added, and the episode is exported.</li><li><strong>Captions.</strong> Burned-in subtitles for the platform you're publishing to.</li><li><strong>Export.</strong> A finished video at the target resolution and aspect ratio.</li></ol>
+<p>The whole thing runs as code, so any episode's build can be rerun. Versioning the pipeline as code is not a nice-to-have — it's the difference between &quot;I make anime&quot; and &quot;I have a factory.&quot;</p>
+
+<h2>What it actually costs</h2>
+<p>The numbers that matter are per-episode, and they collapsed when the expensive stage got cheaper. In my setup, switching frame generation to a cheaper model and adding upscaling cut that one line item by roughly an order of magnitude per episode. Total production cost per episode now runs in the <strong>low tens of dollars</strong>, versus the hundreds or thousands a studio's per-episode budget starts at.</p>
+<table>
+<tr><th>Stage</th><th>Typical cost share</th><th>Notes</th></tr>
+<tr><td>Script</td><td>Low</td><td>Fixed by prompt + outline length</td></tr>
+<tr><td>Frames + upscale</td><td>Highest</td><td>The lever that cut costs most</td></tr>
+<tr><td>Voiceover</td><td>Low</td><td>Fixed per minute</td></tr>
+<tr><td>Assembly + captions</td><td>Low</td><td>Cheap, but eats clock time if not coded</td></tr>
+</table>
+<p>Those are my numbers. Yours differ by model choice, episode length, and how many shots you redo. The structure is what transfers — every stage has a cost, and the cheapest wins are the ones you can rerun automatically.</p>
+
+<h2>Monetizing: episodes plus digital products</h2>
+<p>The business side is plainer than the production side. I publish episodes on a content channel and sell digital products on Gumroad, because a digital product has no inventory and no shipping, and the marginal cost of another copy is zero. That's not passive-income magic — it's that the per-unit cost is basically zero, so every sale past the first is nearly all margin. Small numbers, repeated, are the whole model.</p>
+<p>The two off-ramps that actually convert for a new AI anime studio:</p>
+<ul><li><strong>Sell the finished episodes</strong> as a catalog — wallpapers, a game built from your IP, or a season.</li><li><strong>Sell the pipeline itself</strong> — the exact script-to-export setup with the tools and prompts, as a handbook or a white-label service where a client can put their own brand on a 30-second sample.</li></ul>
+<p>If you want the exact setup — the tools, the prompts, the redo rules — that's documented. It's the same process I run, and if something breaks in it, that's documented too.</p>
+
+<h2>Two rules that keep the pipeline from becoming a mess</h2>
+<ol><li><strong>Cap redo rounds per shot.</strong> The biggest time sink in any AI anime pipeline is an agent regenerating the same frame forever. Two passes max, then take the best one. Perfectionism is the real cost driver.</li><li><strong>Version the build as code from day one.</strong> If an episode's build can't be rerun from a script, you're rebuilding everything by hand, forever.</li></ol>
+
+<div class="faq">
+<h3>Frequently asked questions</h3>
+<p><strong>Do I need a powerful computer?</strong><br>No. Every stage runs on a prompt to a hosted model or service. You need a browser and a code editor, not a workstation.</p>
+<p><strong>Is the quality actually good enough to publish?</strong><br>Yes — AI anime shorts are already published and watched across platforms. The bar isn't &quot;looks like a studio movie,&quot; it's &quot;tells a complete story in the format a platform rewards.&quot;</p>
+<p><strong>How long does one episode take?</strong><br>Once the pipeline is coded, a single episode's build is mostly unattended. The human time is in writing the script and reviewing the frames you keep.</p>
+<p><strong>What if I don't want to run the software myself?</strong><br>You don't have to build this from scratch — that's exactly what a white-label service is for. Get a branded 30-second sample first, then decide.</p>
+</div>
+
+<p>#AIDonghua #AIShortFilm #AICreator #CreatorEconomy #AIAnime</p>
+</article>
+
+<div class="cta">
+  <div class="cta-title">Want a branded 30-second AI anime sample — no setup required?</div>
+  <p>Get a free, white-label 30s AI animation sample you can put your own brand on, or jump to the full services and the free automation audit checklist.</p>
+  <a class="btn" href="../../white-label-video.html">Get the free sample →</a>
+  <a class="alt" href="../../services.html">See all services</a>
+</div>
+
+<div class="article-nav">
+  <div class="prev"><a href="06-agentic-commerce-digital-products-monetization.html">← Previous</a></div>
+  <div class="next"><a href="../../index.html">Back to content site →</a></div>
+</div>
+
+<a class="back" href="../../index.html">← Back to content site</a>
+<footer>
+  <div class="mono">© 2026 · chfr19820610-cell</div>
+  <div>Content site is free; services are per-deliverable. Read the <a href="../../index.html" style="color:var(--accent)">content site</a>, then buy if you trust it.</div>
+</footer>
+</div>
+</body>
+</html>
