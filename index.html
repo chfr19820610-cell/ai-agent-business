@@ -67,6 +67,19 @@
   .post .link:hover{color:var(--bg);background:var(--accent)}
   .note{margin-top:40px;padding:24px;border:1px dashed var(--line);border-radius:14px;color:var(--dim);font-size:14px}
   .note strong{color:var(--ink)}
+  .shop{margin-top:40px}
+  .shop-title{font-family:var(--mono);font-size:12px;color:var(--accent2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+  .shop-title h2{display:inline;font-size:inherit;color:inherit;font-weight:600}
+  .product{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:16px;transition:border-color .2s;display:flex;flex-direction:column;gap:8px}
+  .product:hover{border-color:var(--accent)}
+  .product .pname{font-size:16px;font-weight:600;color:var(--ink)}
+  .product .pdesc{font-size:13px;color:var(--dim);line-height:1.6}
+  .product .pmeta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:4px}
+  .product .price{font-family:var(--mono);font-size:14px;color:var(--accent)}
+  .product .badge{font-family:var(--mono);font-size:11px;color:var(--accent2);border:1px solid var(--accent2);border-radius:4px;padding:2px 6px}
+  .product .buy{display:inline-block;color:var(--accent);font-family:var(--mono);font-size:13px;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+  .product .buy:hover{color:var(--bg);background:var(--accent)}
+  .product.free .price{color:var(--accent2)}
   footer{padding:40px 0 64px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
   .mono{font-family:var(--mono)}
   a{color:var(--accent)}
@@ -191,6 +204,105 @@
     <h2>The Real Window for Ordinary People in Agentic Commerce</h2>
     <p class="hook">No code, no capital — how discovery shifting to AI recommendation opens a real lane for ordinary people. Concrete steps, honest timeline.</p>
     <a class="link" href="posts/en/11-window-ordinary-people-agentic-commerce.html">阅读全文 →</a>
+  </div>
+
+  <!-- Gumroad产品展示区 — 直接引流到购买页 -->
+  <div class="shop" id="shop">
+    <div class="shop-title"><h2>📦 Digital Products — Buy or Try</h2></div>
+
+    <div class="product">
+      <div class="pname">Nine Turns of the Crimson Heavens — Complete Season (Episodes 1-12)</div>
+      <div class="pdesc">4+ hours of AI-generated Xianxia cultivation fantasy. 12 full episodes, 5-8 min each. Complete story arc.</div>
+      <div class="pmeta">
+        <span class="price">$156</span>
+        <span class="badge">LAUNCH25 — 25% off</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/nine-turns-complete-season">Buy Complete Season →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">Nine Turns EP1: The Night the Village Burned</div>
+      <div class="pdesc">First episode — try the series for $0.99. Watch the origin story.</div>
+      <div class="pmeta">
+        <span class="price">$0.99</span>
+        <span class="badge">FREE-EP1 — 100% off</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/nine-turns-episode-1">Get Episode 1 →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">Starfall Chronicle EP2 — Under the Dome (AI Donghua)</div>
+      <div class="pdesc">Second episode of the Starfall Chronicle series. AI-animated sci-fi drama.</div>
+      <div class="pmeta">
+        <span class="price">$39</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/starfall-chronicle-ep2">Buy Episode →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">White-Label AI Animation Suite</div>
+      <div class="pdesc">Full pipeline: ComfyUI workflows, motion graphics templates, TTS config. Rebrand and resell.</div>
+      <div class="pmeta">
+        <span class="price">$156</span>
+        <span class="badge">LAUNCH25 — 25% off</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/uimoa">Get the Suite →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">AICG Animation Production Handbook</div>
+      <div class="pdesc">Complete AI animation workflow guide: ComfyUI + Remotion + TTS. From script to published episode.</div>
+      <div class="pmeta">
+        <span class="price">$78</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/yubnkr">Get the Handbook →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">Vertical Manhua AI Toolkit</div>
+      <div class="pdesc">SDXL workflows + LoRA training for vertical scroll manhua. Character consistency pipeline included.</div>
+      <div class="pmeta">
+        <span class="price">$78</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/gtnab">Get the Toolkit →</a>
+      </div>
+    </div>
+
+    <div class="product free">
+      <div class="pname">🆓 Free: 30s White-Label AI Animation Sample</div>
+      <div class="pdesc">Watch a 30-second AI animation sample before commissioning. No signup required.</div>
+      <div class="pmeta">
+        <span class="price">FREE</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/hrscll">Watch Free Sample →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">Starfall Night — HTML5 Arcade Game</div>
+      <div class="pdesc">Browser-based arcade game inspired by the Starfall Chronicle universe. Playable on any device.</div>
+      <div class="pmeta">
+        <span class="price">$39</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/tbvjl">Get the Game →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">Nine Heavens Ascension — Xianxia Novel</div>
+      <div class="pdesc">Full-length cultivation novel. The literary source behind the animated series.</div>
+      <div class="pmeta">
+        <span class="price">$39</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/uanaek">Get the Novel →</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="pname">Crypto Spread Scanner — Arbitrage Detection</div>
+      <div class="pdesc">Real-time crypto exchange spread scanner. Detect arbitrage opportunities across exchanges.</div>
+      <div class="pmeta">
+        <span class="price">$78</span>
+        <a class="buy" href="https://chfr1982.gumroad.com/l/bnfbmd">Get the Scanner →</a>
+      </div>
+    </div>
+
   </div>
 
   <div class="note">
