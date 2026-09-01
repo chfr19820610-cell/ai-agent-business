@@ -45,6 +45,19 @@ This is the AI-readable index for this site (llms.txt). It gives AI crawlers and
 - [How to Set Up AI Agents for Your Small Business (Without Hiring a Team)](/ai-agent-business/posts/en/07-service-setup-agents.html): A concrete, no-hype guide to scoping and deploying your first AI agent — pick one task, write ten examples, prove it on tools you already pay for. Service lead-in: [AI Agent Setup](/ai-agent-business/services.html).
 - [AI Automation Audit: Where Your Business Is Wasting Time (and How to Fix It)](/ai-agent-business/posts/en/08-service-automation-audit.html): How to log, measure, and rank the automatable hours in your business before you automate anything. Service lead-in: [AI Automation Audit](/ai-agent-business/services.html).
 
+## Digital products (Gumroad)
+
+The one-person studio sells AI-animated series, production toolkits, and guides on Gumroad. All products are instant download. The full catalog is on the home page shop section.
+
+- [Nine Turns of the Crimson Heavens — Complete Season (12 Episodes)](https://chfr1982.gumroad.com/l/nine-turns-complete-season): AI-animated Xianxia cultivation web series, 4+ hours, 12 episodes. Use code LAUNCH25 for 25% off.
+- [Nine Turns EP1 — Free with code FREE-EP1](https://chfr1982.gumroad.com/l/nine-turns-episode-1): First episode free. AI-generated Chinese donghua.
+- [AICG Animation Production Handbook](https://chfr1982.gumroad.com/l/aicg-handbook): Complete AI animation workflow guide — ComfyUI + Remotion + TTS.
+- [White-Label AI Animation Suite](https://chfr1982.gumroad.com/l/uimoa): Full white-label pipeline, reseller license. Use code LAUNCH25.
+- [Vertical Manhua AI Toolkit](https://chfr1982.gumroad.com/l/gtnab): ComfyUI workflows for vertical scroll manhua, LoRA training included.
+- [Free 30s AI Animation Sample](https://chfr1982.gumroad.com/l/hrscll): Free preview, no signup required.
+
+Full store: [chfr1982.gumroad.com](https://chfr1982.gumroad.com)
+
 ## Support
 
 - [Sponsor this project on GitHub](https://github.com/sponsors/chfr19820610-cell): Support the one-person content studio.
