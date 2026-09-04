@@ -61,3 +61,8 @@ Full store: [chfr1982.gumroad.com](https://chfr1982.gumroad.com)
 ## Support
 
 - [Sponsor this project on GitHub](https://github.com/sponsors/chfr19820610-cell): Support the one-person content studio.
+
+### Free AI Donghua & Production Pipeline (high buyer intent)
+
+- [Watch AI Donghua Free: Complete Episode 1 Download (No Signup)](/posts/en/11-watch-ai-donghua-free-download.html): Free download of a complete AI-animated web series episode. No signup, no email. Xianxia style.
+- [I Made a Complete AI-Animated Series With Open-Source Tools — Full Pipeline](/posts/en/12-ai-animated-series-complete-pipeline.html): 12 episodes, every tool named, every setting documented. The exact ComfyUI→Motion→TTS→Publish pipeline.
