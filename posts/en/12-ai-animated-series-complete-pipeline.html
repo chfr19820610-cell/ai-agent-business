@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Made a Complete AI-Animated Series With Open-Source Tools — Full Pipeline</title>
+<meta name="description" content="The complete production pipeline behind a 12-episode AI-animated Xianxia web series: SDXL + LoRA, ComfyUI, Ken Burns, TTS, Blender. Real costs, real tools, watchable result.">
+<link rel="canonical" href="https://chfr19820610-cell.github.io/ai-agent-business/posts/en/12-ai-animated-series-complete-pipeline.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Agent Business">
+<meta property="og:title" content="I Made a Complete AI-Animated Series With Open-Source Tools">
+<meta property="og:description" content="12 episodes, consistent characters, real story arc. The exact pipeline: SDXL + LoRA, ComfyUI, Ken Burns, TTS, Blender. Every tool named, every cost accounted for.">
+<meta property="og:url" content="https://chfr19820610-cell.github.io/ai-agent-business/posts/en/12-ai-animated-series-complete-pipeline.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="I Made a Complete AI-Animated Series With Open-Source Tools">
+<meta name="twitter:description" content="12-episode AI-animated Xianxia series. Full pipeline: SDXL+LoRA, ComfyUI, TTS, Blender. Real costs.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"I Made a Complete AI-Animated Series With Open-Source Tools","description":"The complete production pipeline behind a 12-episode AI-animated Xianxia web series.","inLanguage":"en","mainEntityOfPage":"https://chfr19820610-cell.github.io/ai-agent-business/posts/en/12-ai-animated-series-complete-pipeline.html"}
+</script>
+<style>:root{--bg:#0E1116;--ink:#E8E6E1;--dim:#9AA3AD;--line:#232A34;--accent:#5ED4B8;--accent2:#E8B64C;--card:#151A22;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+.topnav{display:flex;flex-wrap:wrap;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:13px}
+.topnav a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.topnav a:hover{color:var(--bg);background:var(--accent)}
+header{padding:48px 0 28px}
+.eyebrow{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(26px,4.6vw,38px);font-weight:700;margin:14px 0 12px;letter-spacing:-.01em;line-height:1.25}
+.sub{color:var(--dim);font-size:15px;max-width:60ch}
+article{padding:12px 0 32px;border-bottom:1px solid var(--line)}
+article h2{font-size:22px;margin:28px 0 10px;line-height:1.35}
+article h3{font-size:17px;margin:22px 0 8px;color:var(--accent2)}
+article p{margin:14px 0;color:var(--ink)}
+article ul,article ol{margin:14px 0 14px 22px}
+article li{margin:7px 0;padding-left:4px}
+article li::marker{color:var(--accent)}
+article a{color:var(--accent);word-break:break-word}
+article strong{color:var(--ink)}
+article table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:8px 12px;text-align:left}
+article th{color:var(--accent2);font-family:var(--mono);font-weight:400}
+article td{color:var(--ink)}
+article pre{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin:14px 0;font-family:var(--mono);font-size:13px;overflow-x:auto;color:var(--dim)}
+article code{font-family:var(--mono);font-size:13px;color:var(--accent2)}
+.cta{margin:30px 0;padding:26px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.cta .cta-title{font-size:17px;font-weight:700;margin-bottom:6px}
+.cta p{color:var(--dim);font-size:14px;margin-bottom:16px;max-width:56ch}
+.cta .btn{display:inline-block;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;padding:11px 22px;border-radius:8px;text-decoration:none;font-family:var(--mono)}
+.cta .btn:hover{background:var(--accent2)}
+.cta .alt{display:inline-block;margin-left:14px;color:var(--dim);font-size:13px;text-decoration:underline}
+.article-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px 0;border-bottom:1px solid var(--line);font-size:14px}
+.article-nav a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.article-nav .next{margin-left:auto;text-align:right}
+.back{display:inline-block;margin-top:22px;color:var(--accent);font-family:var(--mono);font-size:13px;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+footer{padding:24px 0 40px;font-size:13px;color:var(--dim);font-family:var(--mono)}
+footer a{color:var(--accent);text-decoration:none}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="topnav">
+  <a href="../../index.html">&#8592; Back to content site</a>
+  <a href="../../services.html">Services</a>
+  <a href="https://chfr1982.gumroad.com">Gumroad Store</a>
+</nav>
+<header>
+  <div class="eyebrow">EN 12 &#183; AI Animated Series</div>
+  <h1>I Made a Complete AI-Animated Series With Open-Source Tools &#8212; Here's the Full Pipeline</h1>
+  <p class="sub">12 episodes, consistent characters, a real story arc. Every tool named, every setting documented, every cost accounted for. No magic button &#8212; just a pipeline that works.</p>
+</header>
+<article>
+<p>Most "AI animation" posts stop at a single generated clip. This is the story of an actual finished series &#8212; 12 episodes, consistent characters, a real story arc &#8212; and the exact pipeline that produced it.</p>
+<h2>The Series: Nine Turns of the Crimson Heavens</h2>
+<p>"Nine Turns of the Crimson Heavens" (&#20061;&#36716;&#20025;&#38675;) is a Xianxia-style AI-animated web series. Twelve episodes, each 1-5 minutes long, in vertical format (1080x1920) optimized for mobile viewing. Every frame is AI-generated. Every voice is AI-synthesized. The story follows Su Chen, a young man whose village burns, who is saved by an immortal cultivator, and who must walk the path of the Nine Turns to survive.</p>
+<p>It's not a tech demo. It's a watchable show.</p>
+<p><strong>Watch the free 30-second sample (no signup):</strong> <a href="https://chfr1982.gumroad.com/l/hrscll" target="_blank" rel="noopener">https://chfr1982.gumroad.com/l/hrscll</a></p>
+
+<h2>The Pipeline: Six Stages, All Open-Source</h2>
+
+<h3>Stage 1: Script &#8594; Shot-by-Shot Breakdown</h3>
+<p>The source material was a Xianxia novel outline. Each episode was broken into a shot list: scene description, character, emotion, camera angle, estimated duration. This is the cheapest stage and the one most people skip &#8212; and it's where the entire episode's quality is decided.</p>
+<p>A shot list entry looks like:</p>
+<pre><code>Scene 1: Village at night, warm light from windows
+Character: Su Chen (young, determined face)
+Emotion: Calm before the storm
+Camera: Wide establishing shot, slow zoom
+Duration: 4s</code></pre>
+
+<h3>Stage 2: Character Frames with SDXL + Custom LoRA</h3>
+<p>This is the core. Without character consistency, AI animation is a slideshow of different people.</p>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Stable Diffusion XL</strong> as the base model</li>
+<li>A <strong>custom-trained LoRA</strong> on 30 character reference images for the protagonist</li>
+<li><strong>ComfyUI</strong> as the generation frontend, with a modular workflow</li>
+</ul>
+<p><strong>Key settings:</strong></p>
+<ul>
+<li>Resolution: 1080x1920 (vertical)</li>
+<li>Sampler: DPM++ 2M Karras, 30 steps</li>
+<li>LoRA weight: 0.7-0.8 (too high fries the composition, too low loses the face)</li>
+<li>Batch size: 10-20 frames per run</li>
+</ul>
+<p>The LoRA was the single biggest quality jump. Before training it, every frame produced a different-looking character. After, Su Chen stayed recognizable across all 12 episodes.</p>
+
+<h3>Stage 3: Animation via Ken Burns + Parallax</h3>
+<p>AI image-to-video models (Kling, Runway, Pika) are still inconsistent for long-form animation &#8212; they hallucinate, warp, and lose character identity after 3-5 seconds.</p>
+<p>Instead, I used:</p>
+<ul>
+<li><strong>Ken Burns effect</strong> (programmatic pan + zoom) on static frames</li>
+<li><strong>Parallax layers</strong> &#8212; background and foreground separated, animated at different speeds</li>
+<li><strong>Motion graphics overlays</strong> for effects (sword slashes, energy auras, particle systems)</li>
+</ul>
+<p>This gives full control over pacing and doesn't require expensive video generation models. The result looks intentional, not like a glitchy AI video.</p>
+
+<h3>Stage 4: TTS Voiceover</h3>
+<p>Chinese voiceover was generated using TTS. The script was broken into dialogue chunks, each synthesized separately, then timed to the animation.</p>
+<p><strong>Tips that actually matter:</strong></p>
+<ul>
+<li>Keep dialogue chunks under 15 seconds for natural pacing</li>
+<li>Use SSML tags to control emphasis and pauses</li>
+<li>Generate 3 takes per line and pick the best one &#8212; costs nothing, saves everything</li>
+</ul>
+
+<h3>Stage 5: Compositing in Blender</h3>
+<p>Blender handled final assembly:</p>
+<ul>
+<li>Layered frames + motion effects + text overlays</li>
+<li>Color grading for consistent visual tone across episodes</li>
+<li>Export to MP4 (H.264, 1080x1920)</li>
+<li>Hardcoded subtitles for non-Chinese speakers</li>
+</ul>
+
+<h3>Stage 6: Publishing</h3>
+<p>The series is published on Gumroad with a deliberate funnel structure:</p>
+<ol>
+<li><strong>Free 30s sample</strong> (no email wall) &#8212; lets people see the quality before committing</li>
+<li><strong>Episode 1</strong> ($7.99) &#8212; impulse-buy priced entry point</li>
+<li><strong>Complete 12-episode season</strong> ($156, 50% off with SEASON50 code) &#8212; for binge watchers</li>
+<li><strong>AICG Animation Production Handbook</strong> ($78) &#8212; for people who want to build their own pipeline</li>
+</ol>
