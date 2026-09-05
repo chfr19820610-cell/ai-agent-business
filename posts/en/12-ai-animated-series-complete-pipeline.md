@@ -75,9 +75,9 @@ Blender handled final assembly:
 
 The series is published on Gumroad with a deliberate funnel structure:
 1. **Free 30s sample** (no email wall) — lets people see the quality before committing
-2. **Episode 1** ($7.99) — impulse-buy priced entry point
-3. **Complete 12-episode season** ($156, 50% off with SEASON50 code) — for binge watchers
-4. **AICG Animation Production Handbook** ($78) — for people who want to build their own pipeline
+2. **Episode 1** (Free) — no-risk entry point, full first episode
+3. **Complete 12-episode season** ($4.99, 50% off with SEASON50 code) — for binge watchers
+4. **AICG Animation Production Handbook** ($1.99, 50% off with LAUNCH50 code) — for people who want to build their own pipeline
 
 ## What It Actually Costs Per Episode
 
@@ -106,11 +106,11 @@ Total per-episode cost runs in the **low tens of dollars**. A traditional animat
 ## Watch It / Build Your Own
 
 - **Free 30s sample (no signup):** [https://chfr1982.gumroad.com/l/hrscll](https://chfr1982.gumroad.com/l/hrscll)
-- **Episode 1 ($7.99):** [https://chfr1982.gumroad.com/l/lrruav](https://chfr1982.gumroad.com/l/lrruav)
-- **Complete 12-Episode Season ($156, use code SEASON50 for 50% off):** [https://chfr1982.gumroad.com/l/vvbxej](https://chfr1982.gumroad.com/l/vvbxej)
-- **AICG Animation Production Handbook ($78, use code GUIDE50 for 50% off):** [https://chfr1982.gumroad.com/l/aicg-handbook](https://chfr1982.gumroad.com/l/aicg-handbook)
-- **Vertical Manhua AI Toolkit ($78):** [https://chfr1982.gumroad.com/l/vsrbx](https://chfr1982.gumroad.com/l/vsrbx)
-- **White-Label AI Animation Suite ($156):** [https://chfr1982.gumroad.com/l/uanaek](https://chfr1982.gumroad.com/l/uanaek)
+- **Episode 1 (Free):** [https://chfr1982.gumroad.com/l/lrruav](https://chfr1982.gumroad.com/l/lrruav)
+- **Complete 12-Episode Season ($4.99, use code SEASON50 for 50% off):** [https://chfr1982.gumroad.com/l/vvbxej](https://chfr1982.gumroad.com/l/vvbxej)
+- **AICG Animation Production Handbook ($1.99, use code GUIDE50 for 50% off):** [https://chfr1982.gumroad.com/l/aicg-handbook](https://chfr1982.gumroad.com/l/aicg-handbook)
+- **Vertical Manhua AI Toolkit ($0.99):** [https://chfr1982.gumroad.com/l/vsrbx](https://chfr1982.gumroad.com/l/vsrbx)
+- **White-Label AI Animation Suite ($2.99):** [https://chfr1982.gumroad.com/l/uanaek](https://chfr1982.gumroad.com/l/uanaek)
 
 The handbook covers the entire pipeline in detail — ComfyUI workflow setup, LoRA training, motion graphics techniques, TTS integration, and Blender compositing. If you're building AI animations, it's the manual I wish I'd had.
 
